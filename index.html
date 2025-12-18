@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CampusFix</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase CDN (ONLY WHAT WE USE) -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+  <!-- 🔥 CARD START -->
+  <div class="card">
+
+    <h1>CampusFix 🚀</h1>
+    <p class="subtitle">Report campus issues easily</p>
+
+    <!-- ISSUE TITLE -->
+    <label>Issue Title</label>
+    <input type="text" id="title" placeholder="e.g. Fan not working">
+
+    <!-- CATEGORY -->
+    <label>Issue Category</label>
+    <select id="category">
+      <option value="Electrical">Electrical</option>
+      <option value="Water">Water</option>
+      <option value="Classroom">Classroom</option>
+      <option value="Hostel">Hostel</option>
+      <option value="Washroom">Washroom</option>
+      <option value="Internet">Internet</option>
+    </select>
+
+    <!-- PRIORITY -->
+    <label>Priority</label>
+    <select id="priority">
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+
+    <!-- DESCRIPTION -->
+    <label>Description</label>
+    <textarea id="desc" placeholder="Describe the problem clearly"></textarea>
+
+    <!-- SUBMIT -->
+    <button onclick="submitIssue()">Submit Issue</button>
+
+    <!-- SUCCESS MESSAGE -->
+    <p id="successMsg" class="success-msg"></p>
+
+    <!-- ADMIN LINK -->
+    <a href="admin.html" class="admin-link">Go to Admin Dashboard</a>
+
+  </div>
+  <!-- 🔥 CARD END -->
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

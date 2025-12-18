@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GovQueue | Appointment Confirmed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadSuccessData()">
+
+<div class="container">
+
+  <div class="brand">
+    <h1>GovQueue</h1>
+    <p>Appointment Confirmed</p>
+  </div>
+
+  <div class="card success-card">
+
+    <h2>✔ Appointment Confirmed</h2>
+
+    <div class="details">
+      <div><span>Office</span><strong id="sOffice"></strong></div>
+      <div><span>Date</span><strong id="sDate"></strong></div>
+      <div><span>Time</span><strong id="sTime"></strong></div>
+      <div><span>Token</span><strong id="sToken"></strong></div>
+      <div><span>Waiting Time</span><strong id="sWaiting"></strong></div>
+    </div>
+
+    <button onclick="goHome()">Book Another</button>
+
+  </div>
+
+  <footer>GovQueue – Smart Government Queue System</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

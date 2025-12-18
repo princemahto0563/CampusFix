@@ -1,0 +1,77 @@
+/* ADMIN PAGE BODY */
+.admin-body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b5cff, #00c853);
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* MAIN CONTAINER */
+.admin-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+/* HEADER */
+.admin-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.admin-header h1 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.admin-header p {
+  opacity: 0.9;
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.stat-box {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* APPOINTMENT CARD */
+.appointment {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.appointment h4 {
+  margin: 0 0 6px;
+}
+
+.appointment p {
+  margin: 3px 0;
+  color: #555;
+}
+
+/* BUTTON */
+.appointment button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(90deg, #2563eb, #22c55e);
+}

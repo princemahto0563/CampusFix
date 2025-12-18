@@ -1,0 +1,158 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* PAGE BACKGROUND (COLLEGE FEEL) */
+body {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("assets/images/campus.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN CARD */
+.card {
+  width: 420px;
+  padding: 32px 30px;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.93);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.35);
+}
+
+/* TITLE */
+.card h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #2563eb;
+}
+
+/* SUBTITLE */
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  margin: 6px 0 24px;
+}
+
+/* LABELS */
+label {
+  display: block;
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* INPUTS */
+input,
+textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px 14px;
+
+  border-radius: 12px;
+  border: 1px solid #dbeafe;
+  font-size: 14px;
+
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+textarea {
+  min-height: 110px;
+  resize: none;
+}
+
+/* SUBMIT BUTTON */
+button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+
+  background: linear-gradient(90deg, #2563eb, #22c55e);
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* SUCCESS MESSAGE */
+.success-msg {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #16a34a;
+  display: none;
+}
+
+/* ADMIN LINK */
+.admin-link {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.admin-link:hover {
+  text-decoration: underline;
+}
+/* DROPDOWN (Category & Priority) */
+select {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px 14px;
+
+  border-radius: 12px;
+  border: 1px solid #dbeafe;
+
+  font-size: 14px;
+  font-family: inherit;
+  background: #ffffff;
+
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}

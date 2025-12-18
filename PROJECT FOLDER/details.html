@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GovQueue | Verify User</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="brand">
+    <h1>GovQueue</h1>
+    <p>User Verification</p>
+  </div>
+
+  <div class="card">
+
+    <label>Full Name</label>
+    <input type="text" id="name">
+
+    <label>Mobile Number</label>
+    <input type="tel" id="mobile">
+
+    <label>Email Address</label>
+    <input type="email" id="email">
+
+    <button class="secondary" onclick="sendOTP()">Send OTP</button>
+
+    <div id="otpBox" style="display:none;">
+      <label>Enter OTP</label>
+      <input type="text" id="otpInput">
+    </div>
+
+    <button onclick="verifyOTP()">Verify & Confirm</button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

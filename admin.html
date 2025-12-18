@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CampusFix Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- LOGIN OVERLAY -->
+<div id="loginOverlay" class="login-overlay">
+  <div class="login-box">
+    <h2>Admin Login</h2>
+    <input type="email" id="adminEmail" placeholder="Admin Email">
+    <input type="password" id="adminPassword" placeholder="Password">
+    <button onclick="adminLogin()">Login</button>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <h2>CampusFix Admin Dashboard</h2>
+</header>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="box">
+    <h3 id="total">0</h3>
+    <p>Total</p>
+  </div>
+  <div class="box">
+    <h3 id="pending">0</h3>
+    <p>Pending</p>
+  </div>
+  <div class="box">
+    <h3 id="resolved">0</h3>
+    <p>Resolved</p>
+  </div>
+</section>
+
+<!-- FILTER BUTTONS -->
+<section class="filters">
+  <button onclick="filterIssues('All')">All</button>
+  <button onclick="filterIssues('Pending')">Pending</button>
+  <button onclick="filterIssues('Resolved')">Resolved</button>
+</section>
+
+<!-- ISSUES -->
+<main id="issues"></main>
+
+<!-- Firebase CDN -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
